@@ -1,4 +1,4 @@
-package de.oscharko.springpetclinic;
+package de.oscharko.springpetclinicmonolith;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
