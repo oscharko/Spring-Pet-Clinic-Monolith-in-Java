@@ -9,10 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>de.oscharko</groupId>
-    <artifactId>Spring-Petclinic</artifactId>
+    <artifactId>Spring-Petclinic-Monolith</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Spring-Petclinic</name>
-    <description>Spring-Petclinic</description>
+    <name>Spring-Petclinic-Monolith</name>
+    <description>Spring-Petclinic-Monolith</description>
     <properties>
         <java.version>17</java.version>
     </properties>
