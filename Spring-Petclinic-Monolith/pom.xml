@@ -39,7 +39,7 @@
     <scm>
         <developerConnection>scm:git:git@github.com:oscharko/Spring-Pet-Clinic.git
         </developerConnection>
-      <tag>Spring-Pet-Clinic-Monolith-1.0.1</tag>
+    <tag>Spring-Pet-Clinic-Monolith-1.0.1</tag>
   </scm>
 
 </project>
