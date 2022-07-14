@@ -1,6 +1,6 @@
 package de.oscharko.springpetclinicmonolith.services;
 
-import de.oscharko.springpetclinicmonolith.model.Owner;
+import java.util.Set;
 
 /**
  * Created by oscharko on 14.07.22 😎
@@ -10,8 +10,15 @@ import de.oscharko.springpetclinicmonolith.model.Owner;
  * Inside the package - de.oscharko.springpetclinicmonolith.services
  * --------------------
  */
-public interface OwnerService extends CrudService<Owner, Long> {
+public interface CrudService<T, ID> {
 
-    Owner findByLastName(String lastName);
+    Set<T> findAll();
 
+    T findById(ID id);
+
+    T save(T object);
+
+    void delete(T object);
+
+    void deleteById(ID id);
 }
