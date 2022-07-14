@@ -14,7 +14,7 @@
     </parent>
     <groupId>de.oscharko</groupId>
     <artifactId>Spring-Pet-Clinic-Monolith</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4-SNAPSHOT</version>
     <name>Spring-Pet-Clinic-Monolith</name>
     <description>Spring-Pet-Clinic-Monolith</description>
     <properties>
@@ -41,7 +41,7 @@
     <scm>
         <developerConnection>scm:git:git@github.com:oscharko/Spring-Pet-Clinic.git
         </developerConnection>
-        <tag>Spring-Pet-Clinic-Monolith-1.0.3</tag>
+        <tag>HEAD</tag>
     </scm>
 
 </project>
