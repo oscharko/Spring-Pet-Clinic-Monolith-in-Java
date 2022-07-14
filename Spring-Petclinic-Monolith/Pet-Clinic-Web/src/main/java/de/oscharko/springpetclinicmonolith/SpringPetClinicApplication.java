@@ -4,8 +4,12 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Created by oscharko on 13.07.22 inside the package - de.oscharko.springpetclinicmonolith 😎
- * www.oscharko.de
+ * Created by oscharko on 13.07.22 😎
+ * Check out -> www.oscharko.de
+ * --------------------
+ * Inside the module  - Pet-Clinic-Web
+ * Inside the package - de.oscharko.springpetclinicmonolith
+ * --------------------
  */
 @SpringBootApplication
 public class SpringPetClinicApplication {
