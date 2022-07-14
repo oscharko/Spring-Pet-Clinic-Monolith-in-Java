@@ -1,21 +1,24 @@
 package de.oscharko.springpetclinicmonolith.model;
 
+import java.io.Serializable;
+
 /**
- * Created by oscharko on 13.07.22 😎
+ * Created by oscharko on 14.07.22 😎
  * Check out -> www.oscharko.de
  * --------------------
  * Inside the module  - Pet-Clinic-Data
  * Inside the package - de.oscharko.springpetclinicmonolith.model
  * --------------------
  */
-public class PetType extends BaseEntity{
-    private String name;
+public class BaseEntity implements Serializable {
 
-    public String getName() {
-        return name;
+    public Long id;
+
+    public Long getId() {
+        return id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setId(Long id) {
+        this.id = id;
     }
 }

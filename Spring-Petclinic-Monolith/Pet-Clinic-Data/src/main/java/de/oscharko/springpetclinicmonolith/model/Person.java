@@ -8,7 +8,7 @@ package de.oscharko.springpetclinicmonolith.model;
  * Inside the package - de.oscharko.springpetclinicmonolith.model
  * --------------------
  */
-public class Person {
+public class Person extends BaseEntity {
     private String firstName;
     private String lastName;
 
