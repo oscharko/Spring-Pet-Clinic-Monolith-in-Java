@@ -14,7 +14,7 @@
     </parent>
     <groupId>de.oscharko</groupId>
     <artifactId>Spring-Pet-Clinic-Monolith</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
     <name>Spring-Pet-Clinic-Monolith</name>
     <description>Spring-Pet-Clinic-Monolith</description>
     <properties>
@@ -27,6 +27,8 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <version>3.0.0-M6</version>
                 <configuration>
+                    <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                     <checkModificationExcludes>
                         <checkModificationExclude>pom.xml</checkModificationExclude>
                         <checkModificationExclude>**</checkModificationExclude>
@@ -39,7 +41,7 @@
     <scm>
         <developerConnection>scm:git:git@github.com:oscharko/Spring-Pet-Clinic.git
         </developerConnection>
-    <tag>HEAD</tag>
-  </scm>
+        <tag>Spring-Pet-Clinic-Monolith-1.0.3</tag>
+    </scm>
 
 </project>
