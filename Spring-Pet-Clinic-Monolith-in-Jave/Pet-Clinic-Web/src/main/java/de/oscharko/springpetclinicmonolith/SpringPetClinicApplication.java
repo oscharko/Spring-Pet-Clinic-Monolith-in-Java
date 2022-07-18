@@ -11,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Inside the package - de.oscharko.springpetclinicmonolith
  * --------------------
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"de.oscharko"})
 public class SpringPetClinicApplication {
 
     public static void main(String[] args) {
