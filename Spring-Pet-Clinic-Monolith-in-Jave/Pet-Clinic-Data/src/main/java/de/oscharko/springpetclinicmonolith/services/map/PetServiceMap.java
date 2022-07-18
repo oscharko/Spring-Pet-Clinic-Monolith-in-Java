@@ -2,6 +2,7 @@ package de.oscharko.springpetclinicmonolith.services.map;
 
 import de.oscharko.springpetclinicmonolith.model.Pet;
 import de.oscharko.springpetclinicmonolith.services.CrudService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -13,6 +14,7 @@ import java.util.Set;
  * Inside the package - de.oscharko.springpetclinicmonolith.services.map
  * --------------------
  */
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
     @Override
     public Set<Pet> findAll() {

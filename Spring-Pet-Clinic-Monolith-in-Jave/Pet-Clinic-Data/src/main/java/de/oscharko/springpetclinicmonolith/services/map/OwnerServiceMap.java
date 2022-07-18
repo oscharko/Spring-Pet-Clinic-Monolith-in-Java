@@ -2,6 +2,7 @@ package de.oscharko.springpetclinicmonolith.services.map;
 
 import de.oscharko.springpetclinicmonolith.model.Owner;
 import de.oscharko.springpetclinicmonolith.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -13,6 +14,7 @@ import java.util.Set;
  * Inside the package - de.oscharko.springpetclinicmonolith.services.map
  * --------------------
  */
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
