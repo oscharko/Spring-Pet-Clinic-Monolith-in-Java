@@ -1,7 +1,6 @@
 package de.oscharko.springpetclinicmonolith.services.map;
 
 import de.oscharko.springpetclinicmonolith.model.Vet;
-import de.oscharko.springpetclinicmonolith.services.CrudService;
 import de.oscharko.springpetclinicmonolith.services.VetService;
 import org.springframework.stereotype.Service;
 
@@ -30,7 +29,7 @@ public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetS
 
     @Override
     public Vet save(Vet object) {
-        return super.save(object.getId(), object);
+        return super.save(object);
     }
 
     @Override
