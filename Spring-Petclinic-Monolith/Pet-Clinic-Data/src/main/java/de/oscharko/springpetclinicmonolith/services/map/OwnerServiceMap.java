@@ -1,7 +1,7 @@
 package de.oscharko.springpetclinicmonolith.services.map;
 
 import de.oscharko.springpetclinicmonolith.model.Owner;
-import de.oscharko.springpetclinicmonolith.services.CrudService;
+import de.oscharko.springpetclinicmonolith.services.OwnerService;
 
 import java.util.Set;
 
@@ -13,7 +13,7 @@ import java.util.Set;
  * Inside the package - de.oscharko.springpetclinicmonolith.services.map
  * --------------------
  */
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
     @Override
     public Set<Owner> findAll() {
         return super.findAll();
@@ -39,4 +39,8 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
         super.deleteById(id);
     }
 
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
+    }
 }
