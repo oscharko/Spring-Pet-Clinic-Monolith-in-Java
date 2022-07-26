@@ -6,27 +6,24 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * Created by oscharko on 15.07.22 😎
- * Check out -> www.oscharko.de
- * --------------------
- * Inside the module  - Pet-Clinic-Web
- * Inside the package - de.oscharko.springpetclinicmonolith.controllers
- * --------------------
+ * Created by oscharko on 15.07.22 😎 Check out -> www.oscharko.de --------------------
+ * Inside the module - Pet-Clinic-Web Inside the package -
+ * de.oscharko.springpetclinicmonolith.controllers --------------------
  */
 @Controller
 public class VetController {
 
-    private final VetService vetService;
+	private final VetService vetService;
 
-    public VetController(VetService vetService) {
-        this.vetService = vetService;
-    }
+	public VetController(VetService vetService) {
+		this.vetService = vetService;
+	}
 
-    @RequestMapping({"/vets", "/vets/index", "/vets/index.html"})
-    public String listVets(Model model) {
+	@RequestMapping({ "/vets", "/vets/index", "/vets/index.html" })
+	public String listVets(Model model) {
 
-        model.addAttribute("vets", vetService.findAll());
-        return "vets/index";
-    }
+		model.addAttribute("vets", vetService.findAll());
+		return "vets/index";
+	}
 
 }

@@ -7,38 +7,36 @@ import org.springframework.stereotype.Service;
 import java.util.Set;
 
 /**
- * Created by oscharko on 14.07.22 😎
- * Check out -> www.oscharko.de
- * --------------------
- * Inside the module  - Pet-Clinic-Data
- * Inside the package - de.oscharko.springpetclinicmonolith.services.map
- * --------------------
+ * Created by oscharko on 14.07.22 😎 Check out -> www.oscharko.de --------------------
+ * Inside the module - Pet-Clinic-Data Inside the package -
+ * de.oscharko.springpetclinicmonolith.services.map --------------------
  */
 @Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
-    @Override
-    public Set<Pet> findAll() {
-        return super.findAll();
-    }
 
-    @Override
-    public Pet findById(Long id) {
-        return super.findById(id);
-    }
+	@Override
+	public Set<Pet> findAll() {
+		return super.findAll();
+	}
 
-    @Override
-    public Pet save(Pet object) {
-        return super.save(object);
-    }
+	@Override
+	public Pet findById(Long id) {
+		return super.findById(id);
+	}
 
-    @Override
-    public void delete(Pet object) {
-        super.delete(object);
-    }
+	@Override
+	public Pet save(Pet object) {
+		return super.save(object);
+	}
 
-    @Override
-    public void deleteById(Long id) {
-        super.deleteById(id);
-    }
+	@Override
+	public void delete(Pet object) {
+		super.delete(object);
+	}
+
+	@Override
+	public void deleteById(Long id) {
+		super.deleteById(id);
+	}
 
 }

@@ -3,39 +3,40 @@ package de.oscharko.springpetclinicmonolith.model;
 import java.time.LocalDate;
 
 /**
- * Created by oscharko on 13.07.22 😎
- * Check out -> www.oscharko.de
- * --------------------
- * Inside the module  - Pet-Clinic-Data
- * Inside the package - de.oscharko.springpetclinicmonolith.model
- * --------------------
+ * Created by oscharko on 13.07.22 😎 Check out -> www.oscharko.de --------------------
+ * Inside the module - Pet-Clinic-Data Inside the package -
+ * de.oscharko.springpetclinicmonolith.model --------------------
  */
-public class Pet extends BaseEntity{
-    private PetType petType;
-    private Owner owner;
-    private LocalDate birthDate;
+public class Pet extends BaseEntity {
 
-    public PetType getPetType() {
-        return petType;
-    }
+	private PetType petType;
 
-    public void setPetType(PetType petType) {
-        this.petType = petType;
-    }
+	private Owner owner;
 
-    public Owner getOwner() {
-        return owner;
-    }
+	private LocalDate birthDate;
 
-    public void setOwner(Owner owner) {
-        this.owner = owner;
-    }
+	public PetType getPetType() {
+		return petType;
+	}
 
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
+	public void setPetType(PetType petType) {
+		this.petType = petType;
+	}
 
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
-    }
+	public Owner getOwner() {
+		return owner;
+	}
+
+	public void setOwner(Owner owner) {
+		this.owner = owner;
+	}
+
+	public LocalDate getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(LocalDate birthDate) {
+		this.birthDate = birthDate;
+	}
+
 }
