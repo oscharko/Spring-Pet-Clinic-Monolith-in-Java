@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * Created by oscharko on 15.07.22 😎
  * Check out -> www.oscharko.de
  * Spring-Pet-Clinic-Monolith-in-Java
- * Inside the module - test
- * Inside the package - de.oscharko.springpetclinicmonolith.model
+ * Inside the module - Pet-Clinic-Web
+ * Inside the package - de.oscharko.springpetclinicmonolith.controllers
  */
 @Controller
 public class VetController {

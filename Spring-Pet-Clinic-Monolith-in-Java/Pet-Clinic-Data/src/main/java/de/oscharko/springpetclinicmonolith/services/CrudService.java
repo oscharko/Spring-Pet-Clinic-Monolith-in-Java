@@ -7,8 +7,8 @@ import java.util.Set;
  * Created by oscharko on 14.07.22 😎
  * Check out -> www.oscharko.de
  * Spring-Pet-Clinic-Monolith-in-Java
- * Inside the module - test
- * Inside the package - de.oscharko.springpetclinicmonolith.model
+ * Inside the module - Pet-Clinic-Data
+ * Inside the package - de.oscharko.springpetclinicmonolith.services
  */
 public interface CrudService<T, ID> {
 

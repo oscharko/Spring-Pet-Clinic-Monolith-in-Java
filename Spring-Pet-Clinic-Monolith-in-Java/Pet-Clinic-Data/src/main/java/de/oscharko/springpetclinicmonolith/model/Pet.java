@@ -7,16 +7,26 @@ import java.time.LocalDate;
  * Created by oscharko on 13.07.22 😎
  * Check out -> www.oscharko.de
  * Spring-Pet-Clinic-Monolith-in-Java
- * Inside the module - test
+ * Inside the module - Pet-Clinic-Data
  * Inside the package - de.oscharko.springpetclinicmonolith.model
  */
 public class Pet extends BaseEntity {
+
+	private String name;
 
 	private PetType petType;
 
 	private Owner owner;
 
 	private LocalDate birthDate;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 
 	public PetType getPetType() {
 		return petType;

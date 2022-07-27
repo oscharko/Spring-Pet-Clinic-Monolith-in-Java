@@ -1,5 +1,6 @@
 package de.oscharko.springpetclinicmonolith.model;
 
+import java.util.HashSet;
 import java.util.Set;
 
 /**
@@ -7,12 +8,12 @@ import java.util.Set;
  * Created by oscharko on 13.07.22 😎
  * Check out -> www.oscharko.de
  * Spring-Pet-Clinic-Monolith-in-Java
- * Inside the module - test
+ * Inside the module - Pet-Clinic-Data
  * Inside the package - de.oscharko.springpetclinicmonolith.model
  */
 public class Vet extends Person {
 
-	private Set<Speciality> specialities;
+	private Set<Speciality> specialities = new HashSet<>();
 
 	public Set<Speciality> getSpecialities() {
 		return specialities;
