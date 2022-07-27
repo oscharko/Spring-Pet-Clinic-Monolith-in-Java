@@ -1,11 +1,9 @@
 package de.oscharko.springpetclinicmonolith.model;
 
-import java.util.Set;
-
 /**
  * IntelliJ IDEA 2022.2 (Ultimate Edition)
  * --------------------
- * Created by oscharko on 13.07.22 😎
+ * Created by oscharko on 27.07.22 😎
  * Check out -> www.oscharko.de
  * --------------------
  * Spring-Pet-Clinic-Monolith-in-Java
@@ -13,14 +11,14 @@ import java.util.Set;
  * Inside the package - de.oscharko.springpetclinicmonolith.model
  * --------------------
  */
-public class Vet extends Person {
-    private Set<Speciality> specialities;
+public class Speciality extends BaseEntity {
+    private String description;
 
-    public Set<Speciality> getSpecialities() {
-        return specialities;
+    public String getDescription() {
+        return description;
     }
 
-    public void setSpecialities(Set<Speciality> specialities) {
-        this.specialities = specialities;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
