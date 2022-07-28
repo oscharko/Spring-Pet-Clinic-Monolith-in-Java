@@ -1,7 +1,8 @@
 package de.oscharko.springpetclinicmonolith.services.map;
 
 import de.oscharko.springpetclinicmonolith.model.Speciality;
-import de.oscharko.springpetclinicmonolith.services.SpecialtiesService;
+import de.oscharko.springpetclinicmonolith.services.SpecialtyService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
@@ -13,7 +14,8 @@ import java.util.Set;
  * Inside the module - Pet-Clinic-Data
  * Inside the package - de.oscharko.springpetclinicmonolith.services.map
  */
-public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialtiesService {
+@Service
+public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialtyService {
 
 	@Override
 	public Set<Speciality> findAll() {

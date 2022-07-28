@@ -2,8 +2,6 @@ package de.oscharko.springpetclinicmonolith;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.boot.autoconfigure.domain.EntityScan;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 /**
  * IntelliJ IDEA 2022.2 (Ultimate Edition)
@@ -14,8 +12,6 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
  * Inside the package - de.oscharko.springpetclinicmonolith
  */
 @SpringBootApplication
-@EntityScan("de.oscharko.springpetclinicmonolith")
-@EnableJpaRepositories("de.oscharko.springpetclinicmonolith")
 public class SpringPetClinicApplication {
 
 	public static void main(String[] args) {

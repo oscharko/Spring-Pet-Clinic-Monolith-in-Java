@@ -10,6 +10,6 @@ import de.oscharko.springpetclinicmonolith.model.Speciality;
  * Inside the module - Pet-Clinic-Data
  * Inside the package - de.oscharko.springpetclinicmonolith.services
  */
-public interface SpecialtiesService extends CrudService<Speciality, Long> {
+public interface SpecialtyService extends CrudService<Speciality, Long> {
 
 }
