@@ -1,5 +1,9 @@
 package de.oscharko.springpetclinicmonolith.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
 import java.time.LocalDate;
 
 /**
@@ -10,12 +14,17 @@ import java.time.LocalDate;
  * Inside the module - Pet-Clinic-Data
  * Inside the package - de.oscharko.springpetclinicmonolith.model
  */
+@Entity
+@Table(name = "visits")
 public class Visit extends BaseEntity {
 
+	@Column(name = "date")
 	private LocalDate date;
 
+	@Column(name = "description")
 	private String description;
 
+	@OneToOne
 	private Pet pet;
 
 	public LocalDate getDate() {
