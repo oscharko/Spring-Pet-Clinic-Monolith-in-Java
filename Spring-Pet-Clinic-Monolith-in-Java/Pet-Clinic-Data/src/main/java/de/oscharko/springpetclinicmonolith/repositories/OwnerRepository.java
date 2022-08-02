@@ -12,4 +12,5 @@ import org.springframework.data.repository.CrudRepository;
  * Inside the package - de.oscharko.springpetclinicmonolith.repositories
  */
 public interface OwnerRepository extends CrudRepository<Owner, Long> {
+    Owner findByLastName(String lastName);
 }
